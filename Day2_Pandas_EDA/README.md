@@ -1,127 +1,133 @@
-# 📊 Day 2: Exploratory Data Analysis (EDA) with Pandas
+# 📊 Day 2: Exploratory Data Analysis with Pandas - Netflix Viewing Data
 
-On the second day of my data journey, I focused on performing **Exploratory Data Analysis (EDA)** using the powerful **Pandas** library. This process helps uncover patterns, spot anomalies, test hypotheses, and check assumptions using summary statistics and visualizations.
+Welcome to **Day 2** of the **100 Days of Data Mastery**!  
+Today we analyze Netflix's viewing patterns using Pandas, uncovering insights from **36,121 titles** in their engagement reports.
+
+---
+
+## 🎯 Objectives
+
+- Perform comprehensive EDA on Netflix's viewing dataset
+- Identify trends in global vs. limited releases
+- Handle real-world data challenges (skewed distributions, 81% missing dates)
+- Generate actionable insights through visualizations
+
+---
+
+## 🧰 Tools & Libraries
+
+```python
+# Data manipulation
+import pandas as pd  
+# Visualizations
+import seaborn as sns  
+# Custom functions
+from pandas_utils import (  
+    plot_histogram, 
+    plot_correlation_matrix,
+    save_combined_plots
+)
+```
+
+Install requirements:  
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
 ## 📁 Folder Structure
 
 ```
-
-Day2\_Pandas\_EDA/
+Day2_Pandas_EDA/
 │
-├── data/
-│   └── netflix\_top10.csv
+├── README.md                # This overview
+├── EDA_with_pandas.ipynb    # Complete analysis notebook
+├── pandas_utils.py          # Custom visualization functions
+├── requirements.txt
 │
-├── utils/
-│   └── statistics\_utils.py
-│
-├── eda\_analysis.ipynb
-├── README.md
-└── outputs/
-├── top10\_shows\_per\_week.png
-├── genre\_distribution.png
-└── weekly\_hours\_trend.png
-
-````
-
----
-
-## 📌 Dataset Used
-
-The dataset used is the **[Netflix Top 10 Weekly Data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-01-18/netflix_titles.csv)**, originally curated by the team at [rfordatascience/tidytuesday](https://github.com/rfordatascience/tidytuesday). This dataset includes weekly global Top 10 shows/movies on Netflix, categorized by type, title, release year, and total hours viewed.
-
----
-
-## 🔍 EDA Goals
-
-1. **Clean the dataset** – handle missing values and format columns.
-2. **Explore categorical and numerical features** – like genre, type, hours watched.
-3. **Visualize** trends and distributions.
-
----
-
-## ✨ Real-Life Example: Streaming Habits
-
-Imagine you're analyzing the **viewing habits of Netflix users**. You may wonder:
-
-- What genres are most watched?
-- Are movies or TV shows more popular?
-- Which weeks had viewing spikes?
-- Is there seasonality in the content people watch?
-
-These are exactly the types of questions we can answer with EDA.
-
----
-
-## 🔧 Data Cleaning
-
-Using a helper function:
-
-```python
-def data_cleaning(data: pd.DataFrame) -> pd.DataFrame:
-    # Handle missing values, parse dates, standardize column names
-    ...
-````
-
-This cleaned our data to make it analysis-ready.
-
----
-
-## 📈 Key Visualizations
-
-### 1. Top 10 Shows per Week
-
-Shows the most watched shows each week and how often they appear.
-
-![top10\_shows\_per\_week](outputs/top10_shows_per_week.png)
-
----
-
-### 2. Genre Distribution
-
-Displays how many times each genre appears in the Top 10 list.
-
-![genre\_distribution](outputs/genre_distribution.png)
-
----
-
-### 3. Weekly Hours Watched Trend
-
-Tracks the total hours viewed over time to identify peaks.
-
-![weekly\_hours\_trend](outputs/weekly_hours_trend.png)
-
----
-
-## 🧠 What I Learned
-
-* **Pandas GroupBy** is key for summarizing and slicing data.
-* **Missing data** can heavily skew your interpretations if not handled.
-* Visuals help explain the story behind the data better than raw numbers.
-
----
-
-## ✅ Example Insight
-
-> In the last quarter of 2021, **TV Shows** dominated the Top 10 rankings, especially genres like **Drama** and **Crime**, possibly due to global releases like *Money Heist* and *Squid Game*.
-
----
-
-## 🙏 Acknowledgment
-
-Thanks to [rfordatascience/tidytuesday](https://github.com/rfordatascience/tidytuesday) for making this dataset publicly available. It’s been an excellent resource for exploring real-world data and sharpening my analysis skills.
-
----
-
-## 🚀 Next Steps
-
-Tomorrow, I plan to dive into **Data Preprocessing & Feature Engineering**, preparing this data for modeling.
-
----
-
-> In commitment and discipline lie the seeds of accomplishment.
-
+└── outputs/                 # Generated analysis artifacts
+    ├── correlation_matrix.png
+    ├── null_values_summary.txt
+    └── eda_visualizations.png
 ```
 
 ---
+
+## 🔍 Key Insights
+
+### 1. Data Characteristics
+```python
+Shape: (36121, 8)
+Missing Values:
+- release_date: 29,396 nulls (81.4%)
+- views: 12 nulls (0.03%)
+```
+
+### 2. Viewership Patterns
+- **Globally available** titles average **3.17M views** vs **1.19M** for limited releases  
+- **"Back in Action" (2025)** dominates with 313M hours viewed  
+- 75% of titles have ≤1.9M hours viewed (right-skewed distribution)
+
+### 3. Strong Correlation
+```python
+views vs hours_viewed: r = 0.98
+```
+
+---
+
+## 📌 Key Code Snippets
+
+### Data Cleaning Pipeline
+```python
+cleaned_data = (data_movies
+    .dropna()
+    .drop(columns=['runtime'])
+    .rename(columns={'title':'movie_title'})
+```
+
+### Feature Engineering
+```python
+data['hours_viewed_million'] = data['hours_viewed'] / 1e6
+```
+
+### Critical Visualization
+```python
+plot_boxplot(cleaned_data, 
+             x_column="available_globally", 
+             y_column="hours_viewed")
+```
+
+---
+
+## 📊 Sample Outputs
+
+| Visualization | Insight |
+|--------------|---------|
+| ![Histogram](outputs/eda_visualizations.png) | EDA Visualization |
+
+---
+
+## 🚀 What's Next?
+
+**Day 3** will explore:  
+- Time-series analysis of release patterns  
+- Advanced feature engineering  
+- Predictive modeling for viewership  
+
+---
+
+## ✅ How to Run
+```bash
+git clone https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery.git
+cd 100DaysofDataMastery/Day2_Pandas_EDA
+```
+
+---
+
+### 🔗 Credits
+Dataset sourced from [TidyTuesday](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-07-29), originally from Netflix's engagement reports.
+
+---
+
+**Key Takeaway**: Netflix's viewership follows a "hit-driven" pattern where global availability significantly boosts engagement, while most titles garner modest viewership.

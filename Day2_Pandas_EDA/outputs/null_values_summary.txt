@@ -1,0 +1,20 @@
+Null values summary report
+========================================
+Total rows in dataset: 36121
+========================================
+
+                    Null Count  Null Percentage
+source                       0         0.000000
+report                       0         0.000000
+title                        6         0.016611
+available_globally           9         0.024916
+release_date             29396        81.382022
+hours_viewed                12         0.033222
+runtime                     12         0.033222
+views                       12         0.033222
+
+========================================
+Key Observations:
+- Column with most nulls: release_date (29396 nulls)
+- Column with highest percentage: release_date (81.38%)
+- Columns with no nulls: source, report
