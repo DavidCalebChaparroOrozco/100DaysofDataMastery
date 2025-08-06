@@ -32,7 +32,7 @@ To master the **Data Domain** by building strong foundations in analytics, machi
 | [2](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day2_Pandas_EDA)   | Exploratory Data Analysis (EDA) with Pandas       |
 | [3](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day3_Data_Visualizations)   | Visualizations with Matplotlib and Seaborn        |
 | [4](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day_04_DataCleaning_Titanic)   | Data Cleaning (NaN, duplicates, etc.)             |
-| 5   | Titanic Dataset EDA                               |
+| [5](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day_05_Titanic_EDA)   | Titanic Dataset EDA                               |
 | 6   | Correlation Analysis                              |
 | 7   | SQL for Data Science (joins, aggregations)        |
 | 8   | Project: Retail Analytics (SQL + Pandas)          |
