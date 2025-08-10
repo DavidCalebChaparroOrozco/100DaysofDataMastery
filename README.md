@@ -35,7 +35,7 @@ To master the **Data Domain** by building strong foundations in analytics, machi
 | [5](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day05_Titanic_EDA)   | Titanic Dataset EDA                               |
 | [6](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day06_Correlation_Titanic)   | Correlation Analysis                              |
 | [7](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day07_SQL_MicrosoftPubs)   | SQL for Data Science (joins, aggregations)        |
-| 8   | Project: Retail Analytics (SQL + Pandas)          |
+| [8](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day08_Project_RetailAnalytics)   | Project: Retail Analytics (SQL + Pandas)          |
 | 9   | Probability Fundamentals                          |
 | 10  | Distributions and Outliers                        |
 | 11  | Hypothesis Testing (z, t, chi-squared)            |
