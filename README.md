@@ -37,7 +37,7 @@ To master the **Data Domain** by building strong foundations in analytics, machi
 | [7](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day07_SQL_MicrosoftPubs)   | SQL for Data Science (joins, aggregations)        |
 | [8](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day08_Project_RetailAnalytics)   | Project: Retail Analytics (SQL + Pandas)          |
 | [9](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day09_Probability_Fundamentals)   | Probability Fundamentals                          |
-| 10  | Distributions and Outliers                        |
+| [10](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day10_Distributions_Outliers)  | Distributions and Outliers                        |
 | 11  | Hypothesis Testing (z, t, chi-squared)            |
 | 12  | Basic Feature Engineering                         |
 | 13  | Project: EDA + Visualization                      |
