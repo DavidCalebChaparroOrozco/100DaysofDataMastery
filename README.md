@@ -38,7 +38,7 @@ To master the **Data Domain** by building strong foundations in analytics, machi
 | [8](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day08_Project_RetailAnalytics)   | Project: Retail Analytics (SQL + Pandas)          |
 | [9](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day09_Probability_Fundamentals)   | Probability Fundamentals                          |
 | [10](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day10_Distributions_Outliers)  | Distributions and Outliers                        |
-| 11  | Hypothesis Testing (z, t, chi-squared)            |
+| [11](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day11_Hypothesis_Testing)  | Hypothesis Testing (z, t, chi-squared)            |
 | 12  | Basic Feature Engineering                         |
 | 13  | Project: EDA + Visualization                      |
 | 14  | Airbnb NYC Dataset                                |
