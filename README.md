@@ -41,7 +41,7 @@ To master the **Data Domain** by building strong foundations in analytics, machi
 | [11](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day11_Hypothesis_Testing)  | Hypothesis Testing (z, t, chi-squared)            |
 | [12](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day12_Basic_Feature_Engineering)  | Basic Feature Engineering                         |
 | [13](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day13_EDA_Visualization)  | Project: EDA + Visualization                      |
-| 14  | Airbnb NYC Dataset                                |
+| [14](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day14_Airbnb_NYC_Dataset)  | Airbnb NYC Dataset                                |
 | 15  | Kaggle: Data Cleaning Challenge                   |
 | 16  | Google Sheets + Python (gspread)                  |
 | 17  | JSON and Public APIs                              |
