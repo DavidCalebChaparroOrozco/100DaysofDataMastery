@@ -42,7 +42,7 @@ To master the **Data Domain** by building strong foundations in analytics, machi
 | [12](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day12_Basic_Feature_Engineering)  | Basic Feature Engineering                         |
 | [13](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day13_EDA_Visualization)  | Project: EDA + Visualization                      |
 | [14](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day14_Airbnb_NYC_Dataset)  | Airbnb NYC Dataset                                |
-| 15  | Kaggle: Data Cleaning Challenge                   |
+| [15](https://github.com/DavidCalebChaparroOrozco/100DaysofDataMastery/tree/main/Day15_Kaggle_Data_Cleaning_Challenge)  | Kaggle: Data Cleaning Challenge                   |
 | 16  | Google Sheets + Python (gspread)                  |
 | 17  | JSON and Public APIs                              |
 | 18  | Web Scraping (BeautifulSoup + Selenium)           |
